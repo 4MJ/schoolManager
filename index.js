@@ -30,6 +30,21 @@ http.createServer(function(request, response){
             console.log(err);
         }
         response.write(data);
+        fs.writeFile('indext.txt', function (err, data) {
+            if (err){
+                return console.error(err);
+            }else{
+                console.log(data.forms.studentID.toString());
+                console.log(data.forms.name.toString());
+                console.log(data.forms.age.toString());
+                console.log(data.forms.courses.toString());
+                console.log(data.forms.gender.toString());
+                console.log(data.forms.level.toString());
+                console.log(data.forms.email.toString());
+                console.log(data.forms.amountPaid.toString());
+            }
+         });
+         console.log("Enrolled");
         response.end();
     });
     
