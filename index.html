@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width" >
+  <title>School Manager</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body >  
+    <div class="container">
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark col-8">
+                <a class="navbar-brand" href="#">School Manager</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                  <ul class="navbar-nav">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Student <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Instructors</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Administration</a>
+                    </li>
+                  </ul>
+                </div>
+          </nav>
+    </header>
+      <section>
+        <form action="/creat-new" method="POST">
+          <div class="row col-8">
+            <div class="col-8 bg-primary">
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for=""> Name</label>
+                      <input type="text" class="form-control" id="" placeholder="name" name="name">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="">ID</label>
+                      <input type="number" class="form-control" id="" placeholder="id" name="id">
+                    </div>
+                  </div>
+                  <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="">Level</label>
+                        <input type="number" class="form-control" id="" placeholder="level" name="level">
+                      </div>
+                      <div class="form-group col-md-4">
+                        <label for="">Gender</label>
+                        <select id="inputState" class="form-control" name="gender">
+                          <option selected>Choose...</option>
+                          <option>M</option>
+                          <option>F</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-md-2">
+                        <label for="inputZip">Age</label>
+                        <input type="text" class="form-control" id="inputZip" name="age">
+                      </div>
+                    </div>
+                  <div class="form-group">
+                    <label for="">Email</label>
+                    <input type="email" class="form-control" id="" placeholder="Email" name="name"name="email">
+                  </div>
+                  <div class="form-group">
+                    <label for="">Course</label>
+                    <input type="text" class="form-control" id="" placeholder="course" name="course">
+                  </div>
+                  </div>
+                </div>
+                <div class="form-group bg-primary col-8">
+                  <label for="exampleFormControlFile1">choose picture</label>
+                  <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                </div>
+                  <div class="row col-8">
+                    <div class="col-md-4"><button type="submit" class="btn btn-primary">Create</button></div>
+                    <div class="col-md-4">
+                      <button type="reset" class="btn btn-success">Update</button></div>
+                    <div class="col-md-4">
+                      <button type="button" class="btn btn-success">Delete </button>
+                    </div>
+                  </div>
+                </form>  
+      </section>
+       
+ </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

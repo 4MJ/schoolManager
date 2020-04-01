@@ -1,0 +1,19 @@
+body{
+    
+        background-image: url("/bootstrap-4.4.1-dist/pics/im5.jpg") no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        -o-background-size: cover;
+      
+}
+p{
+    color: yellow;
+}
+.page-holder {
+    min-height: 100vh;
+  }
+  
+  .bg-cover {
+    background-size: cover !important;
+  }
